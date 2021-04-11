@@ -86,15 +86,12 @@ button {
 }
 
 .gridGallery {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr;
-    gap: 2em;
-    margin: 2em 2em;
+    margin: 2em 2em 0em;
 }
 
 .gridGallery img {
     box-shadow: 0 10px 10px -10px black;
+    margin-bottom: 2em;
     cursor: pointer;
 }
 
