@@ -1,5 +1,5 @@
 .gridContainer {
-    margin: 0em 1em;
+    margin: 1em 1em;
 }
 
 section {
@@ -28,6 +28,26 @@ section {
     text-align: center;
     font-size: 0.9em;
 }
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 10px 10px -10px black;
+  }
+
+  .subContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .responsive-iframe {
+    width: 100%;
+  }
 
 @media (min-width: 500px) {
     .logo {
