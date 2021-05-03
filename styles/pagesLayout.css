@@ -61,7 +61,7 @@ p {
     align-items: center;
 }
 
-button {
+.buttonWrap button {
     background-color: var(--about);
     outline: none;
     border: none;
@@ -86,21 +86,78 @@ button {
 }
 
 .gridGallery {
-    margin: 2em 2em 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0.2em 1em;
+    gap: 0.2em;
+
 }
 
 .gridGallery img {
-    box-shadow: 0 10px 10px -10px black;
-    margin-bottom: 2em;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 4px -5px black;
+    margin-bottom: 1em;
     cursor: pointer;
+}
+
+.grid-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 0em;
+}
+.buttonWrapper{
+    background-color: var(--about);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 75px;
+    z-index: 100;
+
+}
+
+.buttonContainer{
+    margin-top: 0.2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-footer);
+    border-bottom: 1px solid black;
+}
+
+
+.listButton{
+    padding: 1em 0em;
+    width: 30px;
+    height: 25px;
+    background-color: var(--nav-footer);
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listIcon {
+    width: 70%;
+}
+
+#imgList{
+    position: absolute; 
+}
+
+#imgGrid{
+    position: absolute;
+    display: none;
 }
 
 @media (min-width: 500px) {
     .gridGallery {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-        grid-template-rows: auto;
         justify-content: center;
         align-items: center;
         gap: 2em;
@@ -110,11 +167,15 @@ button {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        box-shadow: 0 10px 10px -10px black;
         transition: transform .2s ease;
     }
     .gridGallery img:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+    }
+    .buttonContainer{
+        display: none;
     }
 }
 
