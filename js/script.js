@@ -17,10 +17,9 @@ document.querySelector("button").addEventListener("click", () => {
 });
 
 
+let toggled = true
 
 document.querySelector(".grid-toggle").addEventListener("click", () => {
-    
-    let toggled = true
 
     document.querySelector(".gridGallery").classList.toggle("grid-list");
     if(toggled) {
