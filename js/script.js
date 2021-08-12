@@ -1,7 +1,6 @@
+let clicked = true
 
 document.querySelector("button").addEventListener("click", () => {
-    
-    let clicked = true
     
     document.querySelector(".contentWrapper").classList.toggle("expand");
     if (clicked) {
