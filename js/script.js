@@ -12,7 +12,6 @@ document.querySelector("button").addEventListener("click", () => {
         document.getElementById("espandi").innerHTML = "Per saperne di piú clicca quí";
         clicked = true;
     }
-    preventDefault()
 });
 
 
@@ -38,5 +37,4 @@ document.querySelector(".grid-toggle").addEventListener("click", () => {
         }
         toggled = true;
     }
-    preventDefault()
 })
